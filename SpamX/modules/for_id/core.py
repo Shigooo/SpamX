@@ -141,7 +141,7 @@ async def welcome_watcher(SpamX: Client, member: Message):
    mai = await SpamX.get_me()
    user = member.new_chat_member.user if member.new_chat_member else member.from_user
    if user.id == mai.id:
-      await SpamX.send_message(message.chat.id, "SpamX Here. Powered by @RiZoeLX!")
+      await SpamX.send_message(message.chat.id, "Hiya !")
       return
    if user.id == Owner:
       await SpamX.send_message(message.chat.id, f"{user.mention} Welcome to {message.chat.title} my King 👑")
